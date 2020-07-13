@@ -39,3 +39,66 @@ body::before {
     url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
     background-size: cover;
 }
+
+#container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+}
+
+#title {
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.125rem;
+}
+
+#description {
+    font-style: italic;
+    text-shadow: 1px 1px 1px #333;
+}
+
+.clue {
+    font-size: 0.925rem;
+    margin-left: 5px;
+}
+
+#title,
+#description {
+    margin-bottom: 1.125rem;
+    padding: 0 25px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#survey-form {
+    max-width: 764px;
+    margin: 0 auto;
+    background-color: var(--color-darkblue-alpha);
+    border-radius: 5px;
+    padding: 35px 50px;
+}
+
+#form-group {
+    width: 100%;
+    padding: 15px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.125rem;
+}
+
+#form-group .form-control {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.125rem;
+    color: #636363;
+}
