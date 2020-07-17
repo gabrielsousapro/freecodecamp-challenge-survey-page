@@ -53,6 +53,7 @@ body::before {
 
 p {
     font-size: 1.125rem;
+    margin-bottom: 10px;
 }
 
 #description {
@@ -67,8 +68,15 @@ p {
 
 #title,
 #description {
-    margin-bottom: 1.125rem;
     padding: 0 25px;
+}
+
+#title {
+    margin-bottom: 0.550rem;
+}
+
+#description {
+    margin-bottom: 2rem;
 }
 
 .text-center {
@@ -83,6 +91,28 @@ p {
     padding: 35px 50px;
 }
 
+@media (max-width: 540px) {
+    #description {
+        padding: 0 10px;
+    }
+
+    #survey-form {
+        padding: 35px 15px;
+    }
+}
+
+@media (max-width: 764px) {
+    #survey-form {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 540px) {
+    #survey-form {
+        max-width: 100%;
+    }
+}
+
 #form-group {
     width: 100%;
     padding: 10px 0;
@@ -90,15 +120,47 @@ p {
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 1.125rem;
 }
 
-#form-group .form-control {
+.form-control {
     display: block;
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: #636363;
+    letter-spacing: 1px;
+}
+
+.input-radio,
+.input-checkbox {
+    text-align: left;
+    margin-right: 15px;
+}
+
+#comments {
+    width: 100%;
+    min-height: 120px;
+    padding: 10px;
+    color: #000;
+    font-size: 1.125rem;
+    font-weight: 400;
+    resize: vertical;
+    letter-spacing: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#submit {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 2px;
+    font-size: 1.125rem;
+    background-color: var(--color-green);
+    border: none;
+    color: var(--color-white);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
